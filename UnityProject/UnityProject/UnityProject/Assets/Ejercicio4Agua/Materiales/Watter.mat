@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7408438524235973462
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 10
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Watter
+  m_Shader: {fileID: -6465566751694194690, guid: 9a52e68d589955d4ebae62e2c55e715c, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses:
+  - MOTIONVECTORS
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _DisplacementNoise1:
+        m_Texture: {fileID: 2800000, guid: 1bfc9e99be0528045802843355ce36cd, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DisplacementNoise2:
+        m_Texture: {fileID: 2800000, guid: b890e1cb3d7fe6f4e9b5c0469a3619db, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DisplacementNoise3:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ReflactionMap:
+        m_Texture: {fileID: 2800000, guid: 6440a41fe91528749a5954d79395fa47, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2DAsset_8643277f722546b0b4698ac1c5b08b2c_Out_0_Texture2D:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _CellDensity: 30
+    - _DisplacementPower: 0.4
+    - _FoamNoiseSpeed: 3
+    - _QueueControl: 0
+    - _QueueOffset: 0
+    m_Colors:
+    - _DeepColor: {r: 0.18222678, g: 0.28993803, b: 0.5943396, a: 0}
+    - _FoamNoiseFuzzines: {r: 3, g: 0.92, b: 0, a: 0}
+    - _LightColor: {r: 0.22694907, g: 0.86971956, b: 0.9433962, a: 0}
+    - _NoiseVelocity: {r: 0.05, g: -0.05, b: 0, a: 0}
+    - _ReflactionAmount: {r: 20, g: 20, b: 0, a: 0}
+    - _RefractionIntensity: {r: 4, g: 0, b: 0, a: 0}
+    - _Scatter: {r: 0, g: 5, b: 0, a: 0}
+    - _ShadowColor: {r: 0.5960785, g: 0.9437501, b: 0.9471697, a: 0}
+    - _Velocity: {r: 0.5, g: 0.5, b: 0, a: 0}
+    - _WaterAbsorption: {r: 0, g: 8.27, b: 0, a: 0}
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1
