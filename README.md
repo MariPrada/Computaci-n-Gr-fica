@@ -25,3 +25,23 @@ https://github.com/user-attachments/assets/54556d77-5b50-4980-98ef-57da088be237
 
 https://github.com/user-attachments/assets/29bf59cd-6d73-41f6-a703-d835a9d21c28
 
+## Entrega 3:
+
+<img width="868" height="508" alt="image" src="https://github.com/user-attachments/assets/83f305cf-35a8-4729-bde3-d5d827b65f47" />
+
+<img width="892" height="541" alt="image" src="https://github.com/user-attachments/assets/db3ab56e-c996-48d7-b3c9-2ade381288dd" />
+
+<img width="841" height="519" alt="image" src="https://github.com/user-attachments/assets/e8f62958-f697-442c-ae48-6b53c845865b" />
+<img width="1022" height="580" alt="image" src="https://github.com/user-attachments/assets/8e25e13a-d4b7-412e-96f2-8c120120d260" />
+
+<img width="870" height="561" alt="image" src="https://github.com/user-attachments/assets/dcd8bbdf-c9b7-49af-83ed-c38354f8da51" />
+
+<img width="1013" height="559" alt="image" src="https://github.com/user-attachments/assets/19eb77fe-ed59-4055-a3d1-de9b4fe56825" />
+
+
+
+https://github.com/user-attachments/assets/24542632-2896-4e84-b3f3-ed12560fa25f
+
+
+
+
