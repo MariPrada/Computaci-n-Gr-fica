@@ -49,6 +49,14 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _Normal1:
+        m_Texture: {fileID: 2800000, guid: 1bfc9e99be0528045802843355ce36cd, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Normal2:
+        m_Texture: {fileID: 2800000, guid: b7df688f524d4e4488f4d52f9f0532da, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _ReflactionMap:
         m_Texture: {fileID: 2800000, guid: 6440a41fe91528749a5954d79395fa47, type: 3}
         m_Scale: {x: 1, y: 1}
@@ -74,18 +82,26 @@ Material:
     - _CellDensity: 30
     - _DisplacementPower: 0.4
     - _FoamNoiseSpeed: 3
+    - _Normal1Strenght: 0.5
+    - _Normal2Strenght: 0.1
     - _QueueControl: 0
     - _QueueOffset: 0
     m_Colors:
     - _DeepColor: {r: 0.18222678, g: 0.28993803, b: 0.5943396, a: 0}
+    - _FoamColor: {r: 0.8537736, g: 1, b: 0.9844704, a: 0}
     - _FoamNoiseFuzzines: {r: 3, g: 0.92, b: 0, a: 0}
+    - _IntersectionDensity: {r: 0, g: 0, b: 0, a: 0}
     - _LightColor: {r: 0.22694907, g: 0.86971956, b: 0.9433962, a: 0}
     - _NoiseVelocity: {r: 0.05, g: -0.05, b: 0, a: 0}
+    - _Normal1Velocity: {r: 0, g: 0, b: 0, a: 0}
+    - _Normal2Velocity: {r: 0, g: 0, b: 0, a: 0}
     - _ReflactionAmount: {r: 20, g: 20, b: 0, a: 0}
     - _RefractionIntensity: {r: 4, g: 0, b: 0, a: 0}
     - _Scatter: {r: 0, g: 5, b: 0, a: 0}
     - _ShadowColor: {r: 0.5960785, g: 0.9437501, b: 0.9471697, a: 0}
+    - _ShallowColor: {r: 0.53301877, g: 1, b: 0.9722889, a: 0}
     - _Velocity: {r: 0.5, g: 0.5, b: 0, a: 0}
     - _WaterAbsorption: {r: 0, g: 8.27, b: 0, a: 0}
+    - _WaterDepth: {r: 1, g: 1, b: 0, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
