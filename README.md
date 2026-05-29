@@ -45,6 +45,14 @@ https://github.com/user-attachments/assets/29bf59cd-6d73-41f6-a703-d835a9d21c28
 
 https://github.com/user-attachments/assets/24542632-2896-4e84-b3f3-ed12560fa25f
 
+## Entrega final:
+
+[play](D:\Computaci-n-Gr-fica-main\Computaci-n-Gr-fica\UnityProject\UnityProject\UnityProject)
+
+
+
+
+https://github.com/user-attachments/assets/dac254c4-4392-4b41-8400-ad98b805e4c4
 
 
 
