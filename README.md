@@ -47,7 +47,7 @@ https://github.com/user-attachments/assets/24542632-2896-4e84-b3f3-ed12560fa25f
 
 ## Entrega final:
 
-[play](D:\Computaci-n-Gr-fica-main\Computaci-n-Gr-fica\UnityProject\UnityProject\UnityProject)
+[play](https://play.unity.com/en/games/36273e2d-7302-4244-8493-7ae650c15d48/final)
 
 
 
