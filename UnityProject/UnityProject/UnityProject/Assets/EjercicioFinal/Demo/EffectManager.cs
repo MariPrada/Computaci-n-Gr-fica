@@ -55,11 +55,17 @@ public class EffectManager : MonoBehaviour
     [Tooltip("Pausa en segundos entre apagar el efecto anterior y encender el nuevo")]
     public float switchDelay = 0.1f;
 
+    [Header("Pausa / Reanudar")]
+    public Button pauseButton;
+    public Button resumeButton;
+
     // -------------------------------------------------------------------------
     // Estado interno
     // -------------------------------------------------------------------------
-    private int  _activeIndex = -1;
-    private bool _isSwitching = false;
+    private int   _activeIndex = -1;
+    private bool  _isSwitching = false;
+    private bool  _isPaused = false;
+    private float _animatorSpeedBeforePause = 1f;
 
     // -------------------------------------------------------------------------
     // Inicio
@@ -71,6 +77,9 @@ public class EffectManager : MonoBehaviour
             int captured = i;
             effects[i].button?.onClick.AddListener(() => OnButtonPressed(captured));
         }
+
+        pauseButton?.onClick.AddListener(PauseCurrentVFX);
+        resumeButton?.onClick.AddListener(ResumeCurrentVFX);
 
         DeactivateAll();
         RefreshButtonColors();
@@ -88,12 +97,46 @@ public class EffectManager : MonoBehaviour
         StartCoroutine(SwitchTo(target));
     }
 
+    public void PauseCurrentVFX()
+    {
+        if (_isSwitching || _activeIndex < 0 || _isPaused) return;
+
+        var slot = effects[_activeIndex];
+
+        if (slot.particles != null)
+            slot.particles.Pause(withChildren: true);
+
+        if (characterAnimator != null)
+        {
+            _animatorSpeedBeforePause = characterAnimator.speed;
+            characterAnimator.speed = 0f;
+        }
+
+        _isPaused = true;
+    }
+
+    public void ResumeCurrentVFX()
+    {
+        if (_isSwitching || _activeIndex < 0 || !_isPaused) return;
+
+        var slot = effects[_activeIndex];
+
+        if (slot.particles != null)
+            slot.particles.Play(withChildren: true);
+
+        if (characterAnimator != null)
+            characterAnimator.speed = _animatorSpeedBeforePause;
+
+        _isPaused = false;
+    }
+
     // -------------------------------------------------------------------------
     // Coroutine de transición
     // -------------------------------------------------------------------------
     private IEnumerator SwitchTo(int newIndex)
     {
         _isSwitching = true;
+        ClearPauseState();
 
         // 1. Apagar efecto actual
         if (_activeIndex >= 0)
@@ -150,8 +193,19 @@ public class EffectManager : MonoBehaviour
         for (int i = 0; i < effects.Length; i++)
             DeactivateSlot(i);
 
+        ClearPauseState();
         PlayState(idleStateName);
         _activeIndex = -1;
+    }
+
+    private void ClearPauseState()
+    {
+        if (!_isPaused) return;
+
+        if (characterAnimator != null)
+            characterAnimator.speed = _animatorSpeedBeforePause;
+
+        _isPaused = false;
     }
 
     // -------------------------------------------------------------------------
